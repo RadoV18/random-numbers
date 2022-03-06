@@ -1,0 +1,11 @@
+@mixin flexBetween($direction: row) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: $direction;
+}
+
+@mixin flexAround($direction: row) {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: $direction;
+}

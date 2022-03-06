@@ -1,0 +1,31 @@
+@import '../../scss/colors', '../../scss/resets', '../../scss/flexbox';
+
+.navbar {
+    background-color: $color-primary;
+    height: 5rem;
+    @include flexBetween;
+    
+    #{&}__logo {
+        color: $color-white;
+        width: 40%;
+        @include flexAround;
+
+        h1 {
+            margin: auto 0;
+        }
+    }
+
+    #{&}__options {
+        width: 50%;
+        @include flexAround;
+    }
+
+    #{&}__list {
+        width: 100%;
+        @include flexAround;
+    }
+
+    #{&}__dropdown {
+        width: 40%;
+    }
+}
