@@ -1,0 +1,30 @@
+@import '../../scss/resets', '../../scss/colors', '../../scss/flexbox';
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+
+    h1 {
+        text-align: center;
+        color: $color-dark;
+        margin: 1rem 0 2rem 0;
+        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.35);
+    }
+}
+
+.algorithm {
+    #{&}__content {        
+        @include flexBetween();
+
+        & .table {
+            width: 70%;
+        }
+    }
+}
+
+.table {
+    #{&}__header th {
+        background-color: $color-secondary;
+        color: $color-white;
+    }
+}

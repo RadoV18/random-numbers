@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.scss";
 import Navbar from "./components/Navbar/Navbar";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, withRouter } from "react-router-dom";
 import Content from "./components/Content/Content";
 
 function App() {
@@ -26,4 +26,4 @@ function App() {
     );
 }
 
-export default App;
+export default withRouter(App);
