@@ -8,3 +8,7 @@ export const getHeaders = (algorithm) => {
         return ["i", "Operación", "xi", "ri"];
     }
 };
+
+export const getEmptyRow = (algorithm) => {
+    return Array(getHeaders(algorithm).length).fill("");
+};

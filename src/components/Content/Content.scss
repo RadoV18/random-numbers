@@ -1,4 +1,4 @@
-@import '../../scss/resets', '../../scss/colors', '../../scss/flexbox';
+@import '../../scss/colors', '../../scss/flexbox';
 
 .container {
     width: 90%;
@@ -16,15 +16,8 @@
     #{&}__content {        
         @include flexBetween();
 
-        & .table {
+        & .table__wrapper {
             width: 70%;
         }
-    }
-}
-
-.table {
-    #{&}__header th {
-        background-color: $color-secondary;
-        color: $color-white;
     }
 }

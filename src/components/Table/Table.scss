@@ -1,0 +1,43 @@
+@import "../../scss/colors", "../../scss/flexbox";
+
+.table {
+    width: 100%;
+    empty-cells: show;
+
+    thead th {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    td:first-child {
+        width: 8%;
+    }
+
+    td {
+        width: 23%;
+    }
+
+    &__wrapper {
+        position: relative;
+    }
+
+    &__scroll {
+        max-height: 70vh;
+        overflow: auto;
+    }
+
+    #{&}__header {
+        height: 2rem;
+        th {
+            background-color: $color-secondary;
+            color: $color-white;
+        }
+    }
+
+    #{&}__row {
+        height: 1.5rem;
+        background-color: $color-white;
+    }
+}
