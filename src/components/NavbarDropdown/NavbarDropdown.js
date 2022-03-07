@@ -1,5 +1,6 @@
 import React from "react";
 import "./NavbarDropdown.scss";
+import { Link } from "react-router-dom";
 
 const NavbarDropdown = ({ title, list }) => {
     return (
@@ -8,7 +9,9 @@ const NavbarDropdown = ({ title, list }) => {
             <ul className="dropdown__content">
                 {list.map((element, index) => (
                     <li className="dropdown__element" key={"element-" + index}>
-                        <a className="dropdown__link" href={element.link}>{element.title}</a>
+                        <Link className="dropdown__link" to={element.link}>
+                            {element.title}
+                        </Link>
                     </li>
                 ))}
             </ul>
