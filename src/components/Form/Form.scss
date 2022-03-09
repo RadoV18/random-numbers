@@ -23,4 +23,8 @@
             background-color: $color-dark;
         }
     }
+
+    #{&}__message {
+        text-align: justify;
+    }
 }
