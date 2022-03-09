@@ -1,4 +1,7 @@
 export const cuadradosMedios = (xi, limit) => {
+    if (!(xi && limit)) {
+        throw new Error("Missing arguments");
+    }
     const result = [];
 
     const digits = String(xi).length;
