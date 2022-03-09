@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.scss";
 import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 import { Switch, Route, withRouter } from "react-router-dom";
 import Content from "./components/Content/Content";
 
@@ -22,6 +23,7 @@ function App() {
                     <Content title="Algoritmo Multiplicativo" algorithm="multiplicativo"/>
                 </Route>
             </Switch>
+            <Footer />
         </div>
     );
 }

@@ -1,0 +1,15 @@
+@import '../../scss/colors', '../../scss/flexbox';
+
+footer {
+    height: 8%;
+    background-color: darken($color-tertiary, 15%);
+    // background-color: darken(#c1c1c1, 16%);
+    @include flexEvenly();
+
+    h1 {
+        color: $color-white;
+        font-size: 1.1rem;
+        margin: auto 0;
+        text-align: center;
+    }
+}

@@ -1,1 +1,5 @@
-@import './scss/resets';
+@import './scss/resets', './scss/flexbox';
+
+.App {
+    @include flexBetween(column);
+}

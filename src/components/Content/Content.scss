@@ -1,6 +1,7 @@
 @import '../../scss/colors', '../../scss/flexbox';
 
 .container {
+    flex-grow: 2;
     width: 90%;
     margin: 0 auto;
 

@@ -2,11 +2,12 @@
 
 .navbar {
     background-color: $color-primary;
-    height: 5rem;
+    height: 11%;
     @include flexBetween;
     
     #{&}__logo {
         color: $color-white;
+        font-weight: bold;
         width: 40%;
         @include flexAround;
 

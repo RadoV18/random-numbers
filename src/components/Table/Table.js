@@ -30,7 +30,7 @@ const Table = ({ algorithm }) => {
                                                   index
                                             }
                                         >
-                                            {element}
+                                            <span>{element}</span>
                                         </td>
                                     ))
                                     : getEmptyRow(algorithm).map(

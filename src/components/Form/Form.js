@@ -5,6 +5,7 @@ import { getInputList } from "../../redux/actions/inputList";
 import { cuadradosMedios } from "../../utils/algorithms";
 import Input from "../Input/Input";
 import { setEmptyTable, setTableContent } from "../../redux/actions/table";
+import "./Form.scss";
 
 const Form = ({ algorithm }) => {
     const dispatch = useDispatch();
@@ -32,7 +33,7 @@ const Form = ({ algorithm }) => {
     };
 
     return (
-        <form>
+        <form className="form">
             {inputList instanceof Array
                 ? inputList.map((element) => (
                     <Input
@@ -46,8 +47,10 @@ const Form = ({ algorithm }) => {
                     />
                 ))
                 : null}
-            <button onClick={submit}>Generar</button>
-            <button onClick={clear}>Limpiar</button>
+            <div className="form__button-container">
+                <button className="form__button" onClick={submit}>Generar</button>
+                <button className="form__button" onClick={clear}>Limpiar</button>
+            </div>
         </form>
     );
 };

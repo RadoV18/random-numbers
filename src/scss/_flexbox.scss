@@ -9,3 +9,14 @@
     justify-content: space-around;
     flex-direction: $direction;
 }
+
+@mixin flexEvenly($direction: row) {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: $direction;
+}
+
+@mixin flex($direction: row) {
+    display: flex;
+    flex-direction: $direction;
+}
