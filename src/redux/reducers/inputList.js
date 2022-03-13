@@ -68,19 +68,19 @@ const inputListReducer = (state = {}, action) => {
                 id: "seedLineal",
             },
             {
-                label: <span>k</span>,
+                label: <span>k (entero)</span>,
                 type: "text",
                 name: "k",
                 id: "k",
             },
             {
-                label: <span>g</span>,
+                label: <span>g (entero)</span>,
                 type: "text",
                 name: "g",
                 id: "g",
             },
             {
-                label: <span>c</span>,
+                label: <span>c (primo cercano a m)</span>,
                 type: "text",
                 name: "c",
                 id: "c",

@@ -91,7 +91,7 @@ export const lineal = (x0, c, a, m) => {
     return result;
 };
 
-export const multiplicativo = (x0, a, m) => {
+export const multiplicativo = (x0, a, m, limite) => {
     if(!(x0 && a && m)) {
         throw new Error("Missing arguments");
     }
@@ -99,7 +99,7 @@ export const multiplicativo = (x0, a, m) => {
     let xi = x0;
     const result = [];
 
-    for(let i = 1; i < m; i++) {
+    for(let i = 1; i <= limite; i++) {
         let row = [];
 
         let operacion = `(${a} · ${xi}) mod (${m})`;
@@ -109,6 +109,27 @@ export const multiplicativo = (x0, a, m) => {
         let ri = xi / (m - 1);
         row.push(xi, ri);
         result.push(row);
+    }
+
+    return result;
+};
+
+export const degenerating = (list) => {
+    const map = new Map();
+    let result = {};
+
+    for(let i = 0; i < list.length; i++) {
+        const row = list[i];
+        const lastIndex = row.length - 1;
+        if(map.has(row[lastIndex])) {
+            result = {
+                number: row[lastIndex],
+                indexes: [map.get(row[lastIndex]), row[0]]
+            };
+            break;
+        } else {
+            map.set(row[lastIndex], row[0]);
+        }
     }
 
     return result;

@@ -25,6 +25,9 @@
     }
 
     #{&}__message {
-        text-align: justify;
+        @include flex(column);
+        span {
+            margin: 0.2rem 0;
+        }
     }
 }
