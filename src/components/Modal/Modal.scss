@@ -34,10 +34,19 @@
     background-color: white;
     border-radius: 5px;
     margin: 5% auto;
-    width: 40%;
+    width: 25%;
     padding: 20px;
     display: flex;
     flex-direction: column;
+
+    h1 {
+        margin: 0.5rem 0;
+    }
+
+    ul {
+        margin: 1rem 2rem;
+        list-style-type: disc;
+    }
 }
 
 @media only screen and (max-width: 768px) {
